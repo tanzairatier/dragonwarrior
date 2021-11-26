@@ -1,0 +1,10 @@
+def draw(self):
+    self.message_speed_box.increment_ticks(self.delta_ticks)
+    self.message_speed_box.draw(self.screen)
+    self.message_speed_box.fill(self.black)
+    self.message_speed_box.draw_border(self.menu_color)
+    self.message_speed_box.draw_label("MESSAGE SPEED", self.gamefont, self.menu_color)
+    self.message_speed_box.draw_string("FAST", self.gamefont, self.menu_color, 1, 1)
+    self.message_speed_box.draw_string("NORMAL", self.gamefont, self.menu_color, 1, 2)
+    self.message_speed_box.draw_string("SLOW", self.gamefont, self.menu_color, 1, 3)
+    self.message_speed_box.draw_selector(self.command_selector)
